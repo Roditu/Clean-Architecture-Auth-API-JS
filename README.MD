@@ -14,37 +14,36 @@
 ---
 
 ## 📌 Description  
-🌟 *ON PROGRESS*
-💡 A learning project implementing **Clean Architecture** principles in a Node.js backend. 
+🌟 *ON PROGRESS*  
+💡 A learning project implementing **Clean Architecture** principles in a Node.js backend.  
 The project demonstrates how to structure an authentication API with proper separation of concerns, making the codebase scalable, maintainable, and testable.
 
 ---
 
 ## 🚀 Features  
-✔️ **User registration (sign up)** – Brief explanation
-✔️ **User authentication (login)** – Brief explanation
-✔️ **Access token / refresh token flow** – Brief explanation
-✔️ **Password hashing & verification** – Brief explanation
-✔️ **Input validation** – Brief explanation
-✔️ **Input validation** – Brief explanation
-✔️ **Error handling** – Brief explanation
-✔️ **- Separation of layers using Clean Architecture** – Brief explanation
+✔️ **User registration (sign up)** - Allows new users to create an account with username, email, and password.  
+✔️ **User authentication (login)** – Verifies user credentials and provides access to protected resources.  
+✔️ **Access token / refresh token flow** – Issues short-lived access tokens for security, and refresh tokens to maintain sessions without re-logging in.  
+✔️ **Password hashing & verification** – Uses bcrypt to store passwords securely and verify them during login.  
+✔️ **Input validation** – Ensures requests contain valid and safe data before processing (e.g., email format, password strength).    
+✔️ **Error handling** – Provides consistent responses for errors (e.g., invalid credentials, missing fields) to improve API reliability.  
+✔️ **- Separation of layers using Clean Architecture** – Divides code into independent layers (domain, application, infrastructure, interfaces), making the project maintainable, scalable, and testable.  
 
 ---
 
 ## 🏗️ Project Structure
-This project follows Clean Architecture with the following main layers:
-src/
-├── Apps/ # Use cases (interactors, orchestrating domain logic)
-├── Commons/ # Error Translation & config (env)
-├── Domains/ # Business rules & entities (pure logic, no frameworks)
-├── Infrastructures/# External services (DB, JWT, bcrypt, etc.)
-├── Interfaces/ # Controllers, HTTP layer, route handlers
-└── app.js # Entry point
+This project follows Clean Architecture with the following main layers:  
+src/  
+├── Apps/ # Use cases (interactors, orchestrating domain logic)  
+├── Commons/ # Error Translation & config (env)  
+├── Domains/ # Business rules & entities (pure logic, no frameworks)  
+├── Infrastructures/# External services (DB, JWT, bcrypt, etc.)  
+├── Interfaces/ # Controllers, HTTP layer, route handlers  
+└── app.js # Entry point  
 
 ---
 
-## 🧰 Tech Stack
+## 🧰 Tech Stack  
 - **Node.js** (JavaScript)
 - **Hapi.js** for HTTP server
 - **JWT** for authentication
